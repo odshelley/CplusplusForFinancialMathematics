@@ -13,9 +13,7 @@ int main () {
     cin >> decimal;
     cout << '\n';
 
-    int number1 = decimal + .5;
-    int number2 = decimal;
-    double check = (number1 -  number2);
+    double check = ( int ( decimal + .5 ) )  -  int ( decimal );
 
     if ( check == 1 ) {
         int nearestInt = ( decimal + 1 ) / 1;
